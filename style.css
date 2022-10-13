@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Fraunces', serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+
+    /* for making the card in center of the screen */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* for making the card in center of the screen */
+
+}
+
+.container{
+    margin: 30px auto;
+    padding: 0 30px;
+}
+
+.grid{
+     max-width: 700px; /*grid container max width size of the card*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white; /*It will make white to the card section  */
+    border-radius: 25px;  /*It will not make image curve from the corner */
+    overflow: hidden;  /*it is used to make the border curve and overflow hidden is used to cover the property  */
+
+
+}
+
+.img-section img{
+    max-width: 100%;
+   display:inherit;  /* we have done this because below the image there was the white color so removing it we done this */
+    /* When you set inherit on a CSS property, the property takes the value from the element’s parent. */
+}
+
+
+.card-content{
+    padding: 30px; /* tplr se space content ke bahar se space */
+    display: flex;  
+    flex-direction: column; /* content ko horizontally rkhna */
+    justify-content: space-between;  /* content ke beech mein se space (equal space) */
+
+}
+
+.pro-cat{
+    color:  hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    
+}
+
+.pro-name{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.pro-desc{
+    color:  hsl(228, 12%, 48%);
+    line-height: 1.6em;
+}
+
+.price {
+    display: flex;
+}
+
+.current-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.older-price{
+    text-decoration: line-through;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    color:  hsl(228, 12%, 48%);
+
+}
+
+.cart-btn{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cart-btn img{
+    padding-right: 8px;
+}
+
+
+@media only screen and (max-width:628px){
+    
+}

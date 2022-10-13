@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&display=swap');
+
+:root{
+    --cream:hsl(30, 38%, 92%);
+    --dark-cyan:hsl(158, 36%, 37%);
+    --white:hsl(0, 0%, 100%);
+    --dark-cyan: hsl(158, 36%, 37%);
+
+
+}
+
+
+body{
+    background-color: var(--cream);
+
+}
+
+
+.card {
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8rem;
+    
+    /* width: 500rem; */
+    border-color: black;
+    height: 50rem;
+    width: 50rem;
+    border-radius: 2rem;
+   
+}
+.card .left img{
+    width: 20rem;
+    height: 30rem;
+}
+
+.card .right{
+    background-color: var(--white);
+    width: 20rem;
+    height: 30rem;
+    padding-left: 2rem;
+    
+}
+#button-cart{
+    background-color: var(--dark-cyan);
+    width: 10rem;
+    height: 2rem;
+    color: var(--white);
+    text-align: center;
+    margin-left: 5rem;
+}
+
+.price{
+    display: flex;
+    
+    
+}
+
+.price #price-left{
+    padding-left: 2rem;
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan);
+    font-weight: bolder;
+}
+
+.price #price-right{
+    padding-left: 1rem;
+
+}
+
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 700;
+}
+p{
+    font-family: 'IM Fell Great Primer SC', serif;
+    font-weight: 500px;
+}
